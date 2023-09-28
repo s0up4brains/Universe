@@ -1,0 +1,53 @@
+/* Standard Idle Button Style */
+.btn-earth {
+  display: grid;
+  place-items: center;
+  position: relative;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border-width: 0px;
+  text-decoration: none;
+  margin: 350px;
+}
+
+/* Button Animation */
+.btn-earth::after {
+  content: url("/assets/landing/earth.png");
+  position: absolute;
+  z-index: -1;
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 750ms linear, transform 1000ms ease-in-out;
+}
+
+/* Size of the hover effe */
+.btn-earth:hover::after,
+.btn-earth:focus::after {
+  opacity: 1;
+  transform: scale(1.12);
+}
+
+/* Button Overall Position on page*/
+.btn-earth-position {
+  display: flex;
+  justify-content: center;
+  /* padding: 350px; */
+}
+
+/* Hides Static Text when hovering */
+.btn-earth:hover h4 {
+  display: none;
+}
+
+/* Reveals Hover Text */
+.btn-earth:hover:before {
+  content: "Welcome";
+  font-family: "Bellefair", serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+}

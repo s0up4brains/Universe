@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bellefair & Barlow Condensed Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@0;1&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <!--Favicon-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+    <!-- Background Image -->
+    <style>
+      @media screen and (min-width: 1024px) and (max-width: 1920px) {
+        body {
+          background-image: url("/assets/home/background-home-desktop.jpg");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+      }
+      @media screen and (min-width: 601px) and (max-width: 1024px) {
+        body {
+          background-image: url("/assets/home/background-home-tablet.jpg");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+      }
+      @media screen and (min-width: 0px) and (max-width: 601px) {
+        body {
+          background-image: url("/assets/home/background-home-mobile.jpg");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+          <g fill="none" fill-rule="evenodd">
+            <circle cx="24" cy="24" r="24" fill="#FFF" />
+            <path
+              fill="#0B0D17"
+              d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+            />
+          </g>
+        </svg>
+      </div>
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li>00 Home</li>
+          <li>01 Destination</li>
+          <li>02 Crew</li>
+          <li>03 Technology</li>
+        </ul>
+        <div class="burger-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+            <g fill="#D0D6F9" fill-rule="evenodd">
+              <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+            </g>
+          </svg>
+        </div>
+      </nav>
+    </section>
+    <br />
+    <!--  -->
+    <section class="content">
+      <h5 class="fade-in-one fadeInBottom">So, you want to travel to</h5>
+      <h1 class="fade-in-two fadeInBottom">SPACE</h1>
+      <p class="fade-in-three fadeInBottom text-align">
+        Let’s face it; if you want to go to space, you might as well<br />
+        genuinely go to outer space and not hover kind of on the edge of it.
+        <br />Well sit back, and relax because we’ll give you <br />a truly out
+        of this world experience!
+      </p>
+    </section>
+    <br />
+    <br />
+    <!-- 
+    <section class="btn-explore-position">
+      <button class="btn-explore">
+        <h4>Explore</h4>
+      </button>
+    </section> -->
+  </body>
+</html>
