@@ -9,12 +9,12 @@
   border-radius: 50%;
   border-width: 0px;
   text-decoration: none;
-  margin: 350px;
+  margin-top: 198px;
 }
 
 /* Button Animation */
 .btn-earth::after {
-  content: url("/assets/landing/earth.png");
+  content: url("/assets/landing/hover.png");
   position: absolute;
   z-index: -1;
   width: auto;

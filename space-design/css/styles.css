@@ -52,7 +52,6 @@ h5 {
 /* NavBar */
 .logo {
   display: flex;
-  float: left;
   padding: 50px;
 }
 
@@ -109,11 +108,7 @@ li {
 
 /* Page Content */
 .content {
-  display: flex;
-  flex-direction: column;
-  padding: 100px;
-  align-items: center;
-  padding: 10px;
+  /* position: relative; */
 }
 .text-align {
   text-align: center;
@@ -173,18 +168,15 @@ li {
 
 /* Desktop */
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
-  body {
-  }
   .burger-icon {
     display: none;
   }
   .btn-explore-position {
-    margin-top: 100px;
-    padding: 100px;
+    /* margin-top: 100px;
+    padding: 100px; */
   }
   .content {
-    float: left;
-    margin-top: 100px;
+    /* margin-top: 100px; */
   }
 }
 
