@@ -2,40 +2,37 @@
 .btn-earth {
   display: grid;
   place-items: center;
-  position: relative;
-  align-items: center;
   width: 250px;
   height: 250px;
   border-radius: 50%;
   border-width: 0px;
   text-decoration: none;
-  margin-top: 198px;
 }
 
 /* Button Animation */
 .btn-earth::after {
-  content: url("/assets/landing/hover.png");
-  position: absolute;
+  content: url("/space-design/assets/landing/hover.png");
+  position: fixed;
   z-index: -1;
-  width: auto;
-  height: auto;
+  width: fit-content;
+  height: fit-content;
   border-radius: 50%;
   opacity: 0;
   transition: opacity 750ms linear, transform 1000ms ease-in-out;
 }
 
-/* Size of the hover effe */
+/* Size of the hover effect */
 .btn-earth:hover::after,
 .btn-earth:focus::after {
   opacity: 1;
-  transform: scale(1.12);
+  transform: scale(1.1);
 }
 
 /* Button Overall Position on page*/
 .btn-earth-position {
+  transform: translatey(100%);
   display: flex;
   justify-content: center;
-  /* padding: 350px; */
 }
 
 /* Hides Static Text when hovering */
